@@ -84,7 +84,7 @@
     <h1>none</h1>
 </ng-template> -->
 
-
+<!-- 
 <span [ngSwitch]="show">
     <p style="color: red;" *ngSwitchCase="'red'">
         red
@@ -97,9 +97,26 @@
     <p style="color: gold;" *ngSwitchDefault>
         default
     </p>
-</span>
-
-
-
-
+</span> -->
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Loops -->
+<h4 *ngFor="let item of mylist">
+    {{item}}
+</h4>
+<h5 *ngFor="let item of arr">
+    {{item.name}}, {{item.age}}
+</h5>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>email</td>
+    </tr> 
+    <tr *ngFor="let item of arr">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+    </tr>
+   
+    
+</table>
 <router-outlet></router-outlet>

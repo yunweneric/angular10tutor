@@ -23,14 +23,33 @@ export class AppComponent {
   getname = (name2) => {
     // let name = "Eric";
     console.log(name2);
-    
+
 
   }
   dis = false;
   show = "blue";
 
-  // keyup = () =>{
-  //   return "hello"
-  // }
-
+  mylist = [
+    "Eric", "Noel", "Lontchi", "James", "Rita"
+  ]
+  arr = [
+    {
+      name: "Eric", age: 25,
+    }, 
+    {
+      name: "noel", age: 25,
+    }, 
+    {
+      name: "joy", age: 25,
+    },
+     {
+      name: "rita", age: 26,
+    }, 
+    {
+      name: "delight", age: 25,
+    },
+    {
+      name: "loveline", age: 27,
+    },
+  ]
 }
