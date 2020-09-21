@@ -1,3 +1,4 @@
+// import { NAMED_ENTITIES } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'tutor';
-  // name = "Eric"
+  title = 'tutor';
+  name = "Eric";
   // getname = () => "Greetings"
   // siteurl = window.location.href;
   // obj = {
@@ -19,8 +20,17 @@ export class AppComponent {
 
   // arr = ["peter", "john", "emma"]
 
+  getname = (name2) => {
+    // let name = "Eric";
+    console.log(name2);
+    
 
+  }
+  dis = false;
+  show = "blue";
 
+  // keyup = () =>{
+  //   return "hello"
+  // }
 
-  
 }

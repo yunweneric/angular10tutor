@@ -1,4 +1,3 @@
-
 <!-- 
 <h1>Hello</h1>
 <h1>{{title}}</h1>
@@ -13,8 +12,94 @@
 <h2>{{siteurl}}</h2>
 
  -->
-
+<!-- 
 <app-login></app-login>
-<app-signup></app-signup>
+<app-signup></app-signup> -->
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!-- <button (click) = "getname(name)">Clickme</button> -->
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Events -->
+<!-- click, keyup, -->
+<!-- <input type="text"  #box (keyup) = "getname(box.value)">
+<input type="text"  #box (mouseover) = "getname('blur event')">
+ -->
+
+
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+<!-- property binding -->
+<!-- 
+<input type="text" [disabled] = {{dis}} value="hello"><br><br>
+<input type="text" disabled = {{dis}} value="this is the input"> -->
+
+
+<!-- conditionals -->
+<!-- <h1 *ngIf="show else elseblock">
+    conditional1
+</h1>
+<ng-template #elseblock>
+    <h1>else block</h1>
+</ng-template> -->
+
+<!-- <ng-container *ngIf="show; else elseTemplate">
+    <h1>condition</h1>
+</ng-container>
+<ng-template #elseTemplate>
+    <h1>else</h1>
+</ng-template>
+ -->
+<!-- <ng-container *ngIf="show; then thenTemplate; else elseTemplate"></ng-container>
+<ng-template #thenTemplate>
+    <h1>condition2</h1>
+</ng-template>
+<ng-template #elseTemplate>
+    <h1>else</h1>
+</ng-template> -->
+<!-- 
+<ng-template [ngIf]="show == 'red'">
+    <h1>red</h1>
+</ng-template>
+<ng-template [ngIf]="show == 'green'">
+    <h1>green</h1>
+</ng-template>
+<ng-template [ngIf]="show =='blue'">
+    <h1>blue</h1>
+</ng-template> -->
+<!-- 
+<ng-container *ngIf="dis; else elseTemplate">
+
+    <ng-template [ngIf]="show == 'red'">
+        <h1>red</h1>
+    </ng-template>
+    <ng-template [ngIf]="show == 'green'">
+        <h1>green</h1>
+    </ng-template>
+    <ng-template [ngIf]="show =='blue'">
+        <h1>blue</h1>
+    </ng-template>  
+    <ng-template [ngIf]="show =='grey'">
+        <h1>grey</h1>
+    </ng-template>
+</ng-container>
+<ng-template #elseTemplate>
+    <h1>none</h1>
+</ng-template> -->
+
+
+<span [ngSwitch]="show">
+    <p style="color: red;" *ngSwitchCase="'red'">
+        red
+    </p>
+    <p style="color: blue;" *ngSwitchCase="'blue'">
+        blue
+    </p><p style="color: green;" *ngSwitchCase="'green'">
+        blue
+    </p>
+    <p style="color: gold;" *ngSwitchDefault>
+        default
+    </p>
+</span>
+
+
+
 
 <router-outlet></router-outlet>
