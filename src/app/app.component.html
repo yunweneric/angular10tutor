@@ -100,7 +100,7 @@
 </span> -->
 <!----------------------------------------------------------------------------------------------------------------------------------------->
 <!-- Loops -->
-<h4 *ngFor="let item of mylist">
+<!-- <h4 *ngFor="let item of mylist">
     {{item}}
 </h4>
 <h5 *ngFor="let item of arr">
@@ -118,5 +118,17 @@
     </tr>
    
     
-</table>
+</table> -->
+<form #simpleForm = "ngForm" (ngSubmit) = "getvalues(simpleForm.value)">
+    <input type="text" ngModel name="user" id=""  placeholder="enter username"><br><br>
+    <input type="age" ngModel name="age" id="" placeholder="enter age "><br><br>
+    <input type="text" ngModel name="address" id="" placeholder="enter address "><br><br>
+    <input type="password" name="password" id="" placeholder="password"><br><br>
+    <input type="reset" value="reset"><br><br>
+    <button>Get data</button>
+</form>
+
+
+
+
 <router-outlet></router-outlet>

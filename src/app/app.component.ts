@@ -26,30 +26,35 @@ export class AppComponent {
 
 
   }
-  dis = false;
-  show = "blue";
+  // dis = false;
+  // show = "blue";
 
-  mylist = [
-    "Eric", "Noel", "Lontchi", "James", "Rita"
-  ]
-  arr = [
-    {
-      name: "Eric", age: 25,
-    }, 
-    {
-      name: "noel", age: 25,
-    }, 
-    {
-      name: "joy", age: 25,
-    },
-     {
-      name: "rita", age: 26,
-    }, 
-    {
-      name: "delight", age: 25,
-    },
-    {
-      name: "loveline", age: 27,
-    },
-  ]
+  // mylist = [
+  //   "Eric", "Noel", "Lontchi", "James", "Rita"
+  // ]
+  // arr = [
+  //   {
+  //     name: "Eric", age: 25,
+  //   },
+  //   {
+  //     name: "noel", age: 25,
+  //   },
+  //   {
+  //     name: "joy", age: 25,
+  //   },
+  //   {
+  //     name: "rita", age: 26,
+  //   },
+  //   {
+  //     name: "delight", age: 25,
+  //   },
+  //   {
+  //     name: "loveline", age: 27,
+  //   },
+  // ]
+
+  getvalues = (val) =>{
+    console.log(val);
+
+  }
 }
