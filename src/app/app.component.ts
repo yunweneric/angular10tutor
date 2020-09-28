@@ -17,7 +17,7 @@ export class AppComponent {
 
   // }
 
-
+ 
   // arr = ["peter", "john", "emma"]
 
   getname = (name2) => {
@@ -32,33 +32,40 @@ export class AppComponent {
   // mylist = [
   //   "Eric", "Noel", "Lontchi", "James", "Rita"
   // ]
-  // arr = [
-  //   {
-  //     name: "Eric", age: 25,
-  //   },
-  //   {
-  //     name: "noel", age: 25,
-  //   },
-  //   {
-  //     name: "joy", age: 25,
-  //   },
-  //   {
-  //     name: "rita", age: 26,
-  //   },
-  //   {
-  //     name: "delight", age: 25,
-  //   },
-  //   {
-  //     name: "loveline", age: 27,
-  //   },
-  // ]
-
-  getvalues = (val) =>{
+  arr = [
+    {
+      name: "Eric", age: 25,email:"yunweneric@gmal.com"
+    },
+    {
+      name: "noel", age: 25,email:"yunweneric@gmal.com"
+    },
+    {
+      name: "joy", age: 25,email:"yunweneric@gmal.com"
+    },
+    {
+      name: "rita", age: 26,email:"yunweneric@gmal.com"
+    },
+    {
+      name: "delight", age: 25,email:"yunweneric@gmal.com"
+    },
+    {
+      name: "loveline", age: 27,email:"yunweneric@gmal.com"
+    },
+  ]
+  color = "orange"
+  getvalues = (val) => {
     console.log(val);
 
   }
+  err = true
+  Updatecolor = () => {
+    this.err = !this.err
+  }
 
 
+  data = "Login data"
+  date = Date.now();
 
-  
+
 }
+

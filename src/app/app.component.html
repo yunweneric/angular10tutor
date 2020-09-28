@@ -133,11 +133,18 @@
 
 <h1 style ="color: gold;">Heading 1</h1>
 <h1 [style.color] = "'green'">Heading 1</h1>
-<h1 [style.color] = "'green'">Heading 1</h1>
-
-
+<h2 [style.background] = "err? 'red': 'green'">Bounded</h2>
+<!-- <app-carousel></app-carousel> -->
+<button class="btn btn-success" (click)="Updatecolor()">Update color</button>
+<!-- <app-login></app-login> -->
 <app-footer></app-footer>
 
+
+<app-login [hero] = "arr"></app-login>
+
+<h1>{{ arr[0].name | uppercase }}</h1>
+<h1>{{ date | date }}</h1>
+<!-- <h1>{{ date | date:'fullDate'}}</h1> -->
 
 
 <router-outlet></router-outlet>
