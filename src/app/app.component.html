@@ -119,6 +119,8 @@
    
     
 </table> -->
+
+<app-header></app-header>
 <form #simpleForm = "ngForm" (ngSubmit) = "getvalues(simpleForm.value)">
     <input type="text" ngModel name="user" id=""  placeholder="enter username"><br><br>
     <input type="age" ngModel name="age" id="" placeholder="enter age "><br><br>
@@ -127,7 +129,7 @@
     <input type="reset" value="reset"><br><br>
     <button>Get data</button>
 </form>
-
+<app-footer></app-footer>
 
 
 
