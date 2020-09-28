@@ -121,14 +121,21 @@
 </table> -->
 
 <app-header></app-header>
-<form #simpleForm = "ngForm" (ngSubmit) = "getvalues(simpleForm.value)">
+<!-- <form #simpleForm = "ngForm" (ngSubmit) = "getvalues(simpleForm.value)">
     <input type="text" ngModel name="user" id=""  placeholder="enter username"><br><br>
     <input type="age" ngModel name="age" id="" placeholder="enter age "><br><br>
     <input type="text" ngModel name="address" id="" placeholder="enter address "><br><br>
     <input type="password" name="password" id="" placeholder="password"><br><br>
     <input type="reset" value="reset"><br><br>
     <button>Get data</button>
-</form>
+</form> -->
+
+
+<h1 style ="color: gold;">Heading 1</h1>
+<h1 [style.color] = "'green'">Heading 1</h1>
+<h1 [style.color] = "'green'">Heading 1</h1>
+
+
 <app-footer></app-footer>
 
 
