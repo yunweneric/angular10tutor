@@ -65,6 +65,8 @@ export class AppComponent {
 
   data = "Login data"
   date = Date.now();
+  str ="Hello angular"
+  money = 100.0
 
 
 }

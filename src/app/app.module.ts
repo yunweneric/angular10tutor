@@ -9,13 +9,17 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { CustomstyleDirective } from './customstyle.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    PagenotfoundComponent,
+    CustomstyleDirective
   ],
   imports: [
     BrowserModule,
