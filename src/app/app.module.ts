@@ -13,6 +13,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { CustomstyleDirective } from './customstyle.directive';
 import { UsersdataService } from './usersdata.service';
 import { EmailService } from './email.service';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EmailService } from './email.service';
     FooterComponent,
     CarouselComponent,
     PagenotfoundComponent,
-    CustomstyleDirective
+    CustomstyleDirective,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

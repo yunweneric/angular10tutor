@@ -16,8 +16,15 @@ export class AppComponent {
     this.data = service.data;
 
   }
-getdata(event){
-  console.log(event.value)
+  getdata(event) {
+    console.log(event.value)
 
-}
-}
+  }
+  course = {
+    title: "The bush seller",
+    Age: 12,
+    students: 30123,
+    releaseDate: new Date(2016, 3, 1),
+    price: 23300,
+  }
+}  

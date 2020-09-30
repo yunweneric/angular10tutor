@@ -170,8 +170,23 @@
 
 <input type="text" (keyup.enter) ="getdata($event)">
 
+
+<h1>{{ course.title | uppercase}}</h1>
+<h1>{{ course.students | number}}</h1>
+<h1>{{ course.Age | number}}</h1>
+<h1>{{ course.price | currency:'FCFA' }}</h1>
+<!-- <h1>{{ course.releaseDate | date:shortDate }}</h1>   -->
+
+
+
+
+
+
+
+<app-favorite></app-favorite>
+
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer is></app-footer>
 
 
 <!-- <app-login [hero] = "arr"></app-login> -->
