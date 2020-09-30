@@ -1,5 +1,6 @@
 // import { NAMED_ENTITIES } from '@angular/compiler';
 import { Component } from '@angular/core';
+import{UsersdataService} from './usersdata.service'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tutor';
+  title = "Angular app"
+
+
+constructor(){
+
+}
+
+
+
+  // title = 'tutor';
   name = "Eric";
   // getname = () => "Greetings"
   // siteurl = window.location.href;
