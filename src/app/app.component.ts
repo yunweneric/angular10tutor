@@ -1,6 +1,6 @@
 // import { NAMED_ENTITIES } from '@angular/compiler';
 import { Component } from '@angular/core';
-import{UsersdataService} from './usersdata.service'
+import { UsersdataService } from './usersdata.service'
 
 @Component({
   selector: 'app-root',
@@ -8,76 +8,16 @@ import{UsersdataService} from './usersdata.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Angular app"
+  title = "Title element"
+  data;
+  decide = "bg-primary"
 
+  constructor(service: UsersdataService) {
+    this.data = service.data;
 
-constructor(){
+  }
+getdata(event){
+  console.log(event.value)
 
 }
-
-
-
-  // title = 'tutor';
-  name = "Eric";
-  // getname = () => "Greetings"
-  // siteurl = window.location.href;
-  // obj = {
-  //   name: "kelly",
-  //   age: 20
-
-  // }
-
- 
-  // arr = ["peter", "john", "emma"]
-
-  getname = (name2) => {
-    // let name = "Eric";
-    console.log(name2);
-
-
-  }
-  // dis = false;
-  // show = "blue";
-
-  // mylist = [
-  //   "Eric", "Noel", "Lontchi", "James", "Rita"
-  // ]
-  arr = [
-    {
-      name: "Eric", age: 25,email:"yunweneric@gmal.com"
-    },
-    {
-      name: "noel", age: 25,email:"yunweneric@gmal.com"
-    },
-    {
-      name: "joy", age: 25,email:"yunweneric@gmal.com"
-    },
-    {
-      name: "rita", age: 26,email:"yunweneric@gmal.com"
-    },
-    {
-      name: "delight", age: 25,email:"yunweneric@gmal.com"
-    },
-    {
-      name: "loveline", age: 27,email:"yunweneric@gmal.com"
-    },
-  ]
-  color = "orange"
-  getvalues = (val) => {
-    console.log(val);
-
-  }
-  err = true
-  Updatecolor = () => {
-    this.err = !this.err
-  }
-
-
-  data = "Login data"
-  date = Date.now();
-  str ="Hello angular"
-  money = 100.0
-
-
 }
-

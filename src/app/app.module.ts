@@ -11,6 +11,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { CustomstyleDirective } from './customstyle.directive';
+import { UsersdataService } from './usersdata.service';
+import { EmailService } from './email.service';
 
 @NgModule({
   declarations: [
