@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tutor"
+    }
+  },
+  "defaultProject": "tutor",
+  "cli": {
+    "analytics": false
+  }
 }

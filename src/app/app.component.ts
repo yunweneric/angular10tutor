@@ -26,5 +26,12 @@ export class AppComponent {
     students: 30123,
     releaseDate: new Date(2016, 3, 1),
     price: 23300,
+    level:2
   }
+  getvalues(al){
+    console.log(al.value);
+    
+
+  }
+ 
 }  

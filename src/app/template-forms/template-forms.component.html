@@ -1,0 +1,26 @@
+<br><br><br>
+<form autocomplete="off" #f="ngForm" (onSubmit)="Submitval(f)">
+    <div class="form-group">
+        <label for="username">User Name</label>
+        <input minlength="2" maxlength="20" required aria-required="true" ngModel type="text" class="form-control"
+            name="username" #firstName="ngModel" pattern="banana">
+        <div class="alert alert-danger" *ngIf="firstName.touched &&!firstName.valid">
+            <div *ngIf="firstName.errors.required"> First Name is required</div>
+            <div *ngIf="firstName.errors.minlength">Min length is {{firstName.errors.minlength.requiredLength}}</div>
+            <div *ngIf="firstName.errors.pattern">This does not fit the required pattern</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input ngModel type="text" class="form-control" name="email" #email="ngModel">
+        <div class="alert alert-danger" *ngIf="email.touched &&!email.valid">Email is required!</div>
+    </div>
+    <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea class="form-control" name="comment" id="" cols="30" rows="5" ngModel></textarea>
+        <!-- <div class="alert alert-danger" *ngIf="comment.touched &&!comment.valid">Comment is required</div> -->
+    </div>
+    <p>{{f.value | json}}</p>
+    
+    <button class="btn btn-primary text-center" [disabled] = !f.valid>Submit</button>
+</form>

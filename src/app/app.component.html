@@ -121,14 +121,28 @@
 </table> -->
 
 <app-header></app-header>
-<!-- <form #simpleForm = "ngForm" (ngSubmit) = "getvalues(simpleForm.value)">
-    <input type="text" ngModel name="user" id=""  placeholder="enter username"><br><br>
-    <input type="age" ngModel name="age" id="" placeholder="enter age "><br><br>
-    <input type="text" ngModel name="address" id="" placeholder="enter address "><br><br>
-    <input type="password" name="password" id="" placeholder="password"><br><br>
-    <input type="reset" value="reset"><br><br>
-    <button>Get data</button>
-</form> -->
+
+<!-- <div class="">
+    <form #simpleForm = "ngForm" (ngSubmit) = "getvalues(simpleForm.value)" class="w80">
+        <div class="form-group">
+         <input class="form-control" type="text" ngModel name="user" id=""  placeholder="enter username"><br><br>
+         <input class="form-control" type="age" ngModel name="age" id="" placeholder="enter age "><br><br>
+         <input class="form-control" type="text" ngModel name="address" id="" placeholder="enter address "><br><br>
+         <input class="form-control" type="password" name="password" id="" placeholder="password"><br><br>
+         <input class="form-control" type="reset" value="reset"><br><br>
+         <button class="btn btn-primary">Get data</button>
+        </div>
+        
+     </form>
+     
+</div> -->
+<!-- <h1>Template Form</h1>
+<app-template-forms></app-template-forms>
+
+<br><br> -->
+
+<h1>Reactive Form</h1>
+<app-reactive-forms></app-reactive-forms>
 
 <!-- 
 <h1 style ="color: gold;">Heading 1</h1>
@@ -168,13 +182,13 @@
 <!-- <input type="text" [(ngModel)] > -->
 
 
-<input type="text" (keyup.enter) ="getdata($event)">
+<!-- <input type="text" (keyup.enter) ="getdata($event)"> -->
 
 
-<h1>{{ course.title | uppercase}}</h1>
+<!-- <h1>{{ course.title | uppercase}}</h1>
 <h1>{{ course.students | number}}</h1>
 <h1>{{ course.Age | number}}</h1>
-<h1>{{ course.price | currency:'FCFA' }}</h1>
+<h1>{{ course.price | currency:'FCFA' }}</h1> -->
 <!-- <h1>{{ course.releaseDate | date:shortDate }}</h1>   -->
 
 
@@ -186,7 +200,7 @@
 <app-favorite></app-favorite>
 
 <router-outlet></router-outlet>
-<app-footer is></app-footer>
+<app-footer></app-footer>
 
 
 <!-- <app-login [hero] = "arr"></app-login> -->
@@ -205,7 +219,3 @@
 <p>{{str | slice:2:6}}</p>
 
 <p>{{ money | currency:'' }}</p> -->
-
-
-
-
