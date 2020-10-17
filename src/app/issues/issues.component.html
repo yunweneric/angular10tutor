@@ -1,0 +1,54 @@
+<div class="container container1">
+    <h1 class="text-center">Please Fill the form to submit an issue</h1>
+
+    <br><br><br>
+    <!--Division for taking input from user -->
+    <div class="row mt-1" style="height:80px;">
+        <div class="col-3 d-none col-md-3 d-md-block"></div>
+        <div class="col-12 col-md-6 bg-success d-flex  
+                    justify-content-center align-items-center  
+                    text-light h3">
+            <input [(ngModel)]="newTask" type="text" value="" class="col-7 form-control"
+                style="width:500px; border:none; border-bottom: 1px solid wheat;">
+
+            <div class="col-1"></div>
+
+            <button (click)="addToList()" class="btn btn-light text-success">
+                Add Issue
+            </button>
+        </div>
+
+        <div class="col-3 d-none col-md-3 d-md-block"></div>
+    </div>
+
+</div>
+<div class="container">
+    <!--Tasks added repeated divisions-->
+    <div *ngFor="let x of items; let index = index;" class="row mt-1" style="height:100px;">
+
+        <div class="col-3 d-none col-md-3 d-md-block"></div>
+
+
+        <div class="col-3 d-none col-md-3 d-md-block"></div>
+    </div>
+    <table class="table" *ngFor="let x of items; let index = index;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Untreated</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row"></td>
+                <td scope="row"></td>
+                <td scope="row">{{x}}</td>
+                <td><input (click)="deleteTask(index)" type="button" value="Delete" class="col-3 btn btn-danger">
+                <input (click)="deleteTask(index)" type="button" value="Treated" class="col-3 btn btn-success"></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

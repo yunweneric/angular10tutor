@@ -1,28 +1,17 @@
-<form [formGroup] = "form">
+<form [formGroup] = 'form'>
     <div class="form-group">
         <label for="username">Username</label>
-        <input 
-        FormControlName = "username"
-            id="username" 
-            type="text" 
-            class="form-control">
-            <div *ngIf = 'form.get("username").touched && form.get("username").invalid'>Username is required!</div>
+        <input type="text" class="form-control" placeholder="Username">
+    
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="text" class="form-control" placeholder="Email">
     </div>
     <div class="form-group">
         <label for="password">Password</label>
-        <input 
-        FormControlName = "password"
-            id="password" 
-            type="password" 
-            class="form-control">
+        <input type="password" class="form-control" placeholder="Password" >
     </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input 
-        FormControlName = "email"
-            id="email" 
-            type="email" 
-            class="form-control">
-    </div>
-    <button class="btn btn-primary" type="submit">Sign Up</button>
+
+    <button class="btn btn-primary text-center">Submit</button>
 </form>

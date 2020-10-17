@@ -16,6 +16,12 @@ import { EmailService } from './email.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
+import { IssuesComponent } from './issues/issues.component';
+import { TreatedComponent } from './treated/treated.component';
+import { UntreatedComponent } from './untreated/untreated.component';
+import { SupportComponent } from './support/support.component';
+import { ChatComponent } from './chat/chat.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,13 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
     CustomstyleDirective,
     FavoriteComponent,
     ReactiveFormsComponent,
-    TemplateFormsComponent
+    TemplateFormsComponent,
+    IssuesComponent,
+    TreatedComponent,
+    UntreatedComponent,
+    SupportComponent,
+    ChatComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +50,7 @@ import { TemplateFormsComponent } from './template-forms/template-forms.componen
     ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [UsersdataService, EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
